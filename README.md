@@ -1,31 +1,24 @@
 # E-commerce-Back-End
 
+
 ## Description
-As a fullstack web developer, I want to create an application...manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
+As a fullstack web developer, I want to create an application that will help internet retail companies with back end for e-commerce websites that use the latest technologies so that those  companies can compete with other e-commerce companies.
+
 
 # Usage
 
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete data in my database
+To use this application, first open the application and add your database name, MySQL username, and MySQL password to an environment variable file.  You will then be able to connect to a  database using Sequelize.  When you enter schema and seed commands, a development database is created and is seeded with test data.  Once you enter the command to invoke the application, your server is started and the Sequelize models are synced to the MySQL database.  When you open API GET routes in Insomnia Core for categories, products, or tags, the data for each of these routes is displayed in a formatted JSON.  When you test API POST, PUT, and DELETE routes in Insomnia Core, you will be able to successfully create, update, and delete data in your database.
+
 
 # Live Site Application
-[Link to Live Site](https://mcalvario.github.io/Professional-Portfolio/)<br>
-[Screenshot of application]![Alt text](img/ProfessionalProfile.png)
+[Link to Live Site]<br>
+[Screenshot of application]
+
 
 # Credits
 Youtube:
 Google:
+w3schools:
 
 
 # license
