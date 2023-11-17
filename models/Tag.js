@@ -16,13 +16,14 @@ Tag.init(
   tag_name: {
     type: Datatypes.STRING
   },
-  {
+},
+{
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'tag',
-  }
+}
 );
 
 module.exports = Tag;
