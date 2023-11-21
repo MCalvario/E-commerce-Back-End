@@ -67,10 +67,10 @@ router.put('/:id', (req, res) => {
   })
   .then((updateTag) => {
     if (!updateTag[0]) {
-      res.status(404).json({ message: '' });
+      res.status(404).json({ message: 'Something went wrong! Please try again.' });
       return;
     }
-    res.json({ message: '' });
+    res.json({ message: 'Success!' });
   })
   .catch((err) => {
     console.log(err);
@@ -85,10 +85,10 @@ router.delete('/:id', (req, res) => {
   })
   .then((deletedTag) => {
     if (!deletedTag) {
-      res.status(404).json({ message: '' });
+      res.status(404).json({ message: 'Something went wrong! Please try again.' });
       return;
     }
-    res.json({ message: ''});
+    res.json({ message: 'Success!'});
   })
   .catch((err) => {
     console.log(err);

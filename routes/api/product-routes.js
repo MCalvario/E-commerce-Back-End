@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     include: [
       {
         model: Category,
-        attributes: ['id', 'category_name'];
+        attributes: ['id', 'category_name'],
       },
       {
         model: Tag,
@@ -44,8 +44,8 @@ router.get('/:id', (req, res) => {
     ]
 }).then((products) => {
   if (!products) {
-    res.status(404)json ({ message: '' });
-    return;
+    res.status(404).json ({ message: 'Something went wrong.  Please try again.' });                 
+     return;
   }
   res.json(products);
 }).catch((err) => {
@@ -138,12 +138,12 @@ router.delete('/:id', (req, res) => {
   }]
   .then((deletedProduct) => {
     if (!deletedProduct) {
-      res.status(404).json({ message: '' });
+      res.status(404).json({ message: 'Something went wrong!  Please try again' });
       return;
     }
-    res.json({ message: '' });
+    res.json({ message: 'Success!' });
   })
-  .catch((err)) => {
+  .catch((err) => {
     res.status(500).json(err);
   });
 });

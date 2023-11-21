@@ -3,7 +3,7 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
     try {
       const catagoryData = await Category.findAll({
         include: [{ model: Product }],
@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     }
   });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const categoryData = await category.findbyPk(req.params.id, {
       include: [{ model: Product }],
@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
   try {
     const catagoryData = await Category.create(req.body);
@@ -51,12 +51,12 @@ router.put('/:id', (req, res) => {
       return;
   }
   res.json({message: 'Success!'});
-});
-.catch((err)) => {
+})
+.catch((err) => {
   console.log(err);
   res.status(500).json(err);
 });
-
+});
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
   Category.destroy({
@@ -70,7 +70,7 @@ router.delete('/:id', (req, res) => {
       return;
     }
     res.json({message: 'success!'});
-  });
+  })
   .catch((err) => {
     console.log(err);
     res.status(500).json(err);
