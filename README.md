@@ -11,14 +11,13 @@ To use this application, first open the application and add your database name, 
 
 
 # Live Site Application
-[Link to Live Site]<br>
-[Screenshot of application]
+[Link to Live Site]https://github.com/MCalvario/E-commerce-Back-End<br>
+[Screenshot of application]![Alt text](<Screenshot (171).png>)
 
 
 # Credits
-Youtube:
-Google:
-w3schools:
+devhttps://dev.to/kmcknight91/how-to-use-insomnia-to-test-api-endpoints-1lad
+Google:www.google.com
 
 
 # license
